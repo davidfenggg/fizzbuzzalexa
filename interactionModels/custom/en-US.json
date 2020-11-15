@@ -1,0 +1,121 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "fizz buzz game",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "NumberGuessIntent",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{number}",
+            "is it {number}",
+            "how about {number}",
+            "could be {number}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "FizzBuzzGuessIntent",
+          "slots": [
+            {
+              "name": "response",
+              "type": "FizzBuzzGuess"
+            }
+          ],
+          "samples": [
+            "{response}"
+          ]
+        },
+        {
+          "name": "PlayIntent",
+          "slots": [],
+          "samples": [
+            "play game",
+            "let\u0027s play",
+            "i wanna play",
+            "i want to play",
+            "play"
+          ]
+        },
+        {
+          "name": "InstructionsIntent",
+          "slots": [],
+          "samples": [
+            "how",
+            "i wanna hear instructions",
+            "i want to hear instructions",
+            "directions",
+            "how to play",
+            "how do i play",
+            "instructions",
+            "hear instructions"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Fizz Buzz"
+              }
+            },
+            {
+              "name": {
+                "value": "Buzz"
+              }
+            },
+            {
+              "name": {
+                "value": "Fizz"
+              }
+            }
+          ],
+          "name": "FizzBuzzGuess"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "7"
+}
